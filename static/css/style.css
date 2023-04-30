@@ -97,7 +97,7 @@ footer {
     align-items: center;
     border-radius: 0 5px 5px 0;
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 40px 50px 50px 1fr 50px 20px 1fr;
 }
 .locf {
     display: grid;
@@ -122,13 +122,21 @@ footer {
     align-items: center;
 }
 
+.bo {
+    text-align: center;
+    color: var(--color-orange);
+    font-size: x-large;
+    font-weight: bold;
+}
 
 .pb {
-    grid-area: A;
     width: 450px;
-    transform: rotate(-90deg);
     position: fixed;
-    left: 450px;
+    transform: rotate(-90deg);
+    left: calc(0.5 * (100vw - 200px) + 20px);
+}
+.pb1 {
+    left: calc(0.8 * (100vw - 200px));
 }
 .adi {
     grid-area: C;

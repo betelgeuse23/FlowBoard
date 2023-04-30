@@ -722,3 +722,15 @@ a.ui-button:active,
 	outline: none;
 	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
+
+.ui-progressbar.ui-corner-all.ui-widget.ui-widget-content {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.ui-progressbar-value.ui-corner-left.ui-widget-header {
+	border: none;
+	outline: none;
+	background: var(--color-orange);
+	transition: all 0.2s linear;
+}

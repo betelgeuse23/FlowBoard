@@ -11,15 +11,6 @@
 	<script src="../static/js/jquery-3.6.4.min.js"></script>
 	<script src="../static/js/jquery-ui.min.js"></script>
 	<script src="../static/js/card.js"></script>
-	<script>
-		$( function() {
-			$("#dd").datepicker();
-			$("#ex").selectmenu();
-			$( "#pb" ).progressbar({
-				value: 37
-			});
-		} );
-	</script>
 </head>
 
 <body class="layout">
@@ -58,7 +49,15 @@
 			</form>
 			<div class="locfm">
 				<div id="pb" class="pb"></div>
-				<div class="adi"> iidaias</div>
+				<div id="pb1" class="pb pb1"></div>
+				<br>
+				<label for="num" class="bo">Hours worked</label>
+				<input type="text" id="num"></input>
+				<button onclick="addProgress()" class="b b1 lb">Submit</button>
+				<br>
+				<div class="bo">Total:</div>
+				<div class="bo" id="met">0</div>
+				<br>
 			</div>
 		</div>
 	</main>
