@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>FB</title>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../static/css/dp.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<script src="../static/js/jquery-3.6.4.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/card.js"></script>
+	<script>
+		$( function() {
+			$("#dd").datepicker();
+			$("#ex").selectmenu();
+			$( "#pb" ).progressbar({
+				value: 37
+			});
+		} );
+	</script>
+</head>
+
+<body class="layout">
+	<aside class="si loca">
+		<div class="logo">
+			<img src="../static/img/logo.svg">
+			FlowBoard
+		</div>
+		<button class="b3 bi menu">
+			Home
+		</button>
+		<button class="b3 bi menu">
+			Board
+		</button>
+		<br>
+		<div class="an">
+			<span class="ni" id="name_i">NS</span>
+			<span id="name">Name Surname</span>
+		</div>
+	</aside>
+	<main class="locm">
+		<div class="locfd">
+			<form class="locf">
+				<br>
+				<label for="nm">Task Name</label>
+				<input class="li" type="text" id="nm" required>
+				<label for="dd">Deadline</label>
+				<input class="li dt" type="text" id="dd">
+				<label for="ex">Executor</label>
+				<select class="li sel" id="ex">
+					<option disabled selected>Select</option>
+					<option value="1">Name Surname</option>
+					<option value="2">Name1 Surname1</option>
+				</select>
+				<button class="b b1 lb">Save</button>
+			</form>
+			<div class="locfm">
+				<div id="pb" class="pb"></div>
+				<div class="adi"> iidaias</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		©2023 Byte Busters | All Rights Reserved
+	</footer>
+</body>
+
+</html

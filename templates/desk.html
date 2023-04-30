@@ -2,110 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>FB</title>
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../static/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <script src="../static/js/jquery-3.6.4.min.js"></script>
-    <script src="../static/js/jquery-ui.min.js"></script>
-    <script src="../static/js/login.js"></script>
-    <script>
-        $( function() {
-          $( ".column" ).sortable({
-            connectWith: ".column",
-            handle: ".portlet-header",
-            cancel: ".portlet-toggle",
-            placeholder: "portlet-placeholder ui-corner-all"
-          });
-       
-          $( ".portlet" )
-            .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
-            .find( ".portlet-header" )
-              .addClass( "ui-widget-header ui-corner-all" )
-              .prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
-       
-          $( ".portlet-toggle" ).on( "click", function() {
-            var icon = $( this );
-            icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
-            icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
-          });
-        } );
-    </script>
-    <style>
-        .column {
-            width: 170px;
-            float: left;
-            padding-bottom: 100px;
-        }
-        .portlet {
-            margin: 0 1em 1em 0;
-            padding: 0.3em;
-        }
-        .portlet-header {
-            padding: 0.2em 0.3em;
-            margin-bottom: 0.5em;
-            position: relative;
-        }
-        .portlet-toggle {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            margin-top: -8px;
-        }
-        .portlet-content {
-            padding: 0.4em;
-        }
-        .portlet-placeholder {
-            border: 1px dotted black;
-            margin: 0 1em 1em 0;
-            height: 50px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<title>FB</title>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<script src="../static/js/jquery-3.6.4.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/desk.js"></script>
 </head>
+
 <body class="layout">
-    <aside class="si loda">
-        <button class="b2 header menu">
-            head
-        </button>
-        <div class="header menu">
-            head
-        </div>
-        <div class="header menu">
-            head1
-        </div>
-    </aside>
-    <main class="lodm">
-        <div class="column">
-            <div class="portlet">
-              <div class="portlet-header">Feeds</div>
-              <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-            <div class="portlet">
-              <div class="portlet-header">News</div>
-              <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-          </div>
-          <div class="column">
-           
-            <div class="portlet">
-              <div class="portlet-header">Shopping</div>
-              <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="portlet">
-              <div class="portlet-header">Links</div>
-              <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-            <div class="portlet">
-              <div class="portlet-header">Images</div>
-              <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-          </div>
-    </main>
-    <footer>
-        ©2023 Byte Busters | All Rights Reserved
-    </footer>
+	<aside class="si loda">
+		<div class="logo">
+			<img src="../static/img/logo.svg">
+			FlowBoard
+		</div>
+		<button class="b3 bi menu">
+			Home
+		</button>
+		<button class="b3 bi menu">
+			Team
+		</button>
+		<div class="add dd">
+			<img src="../static/img/grid_w.svg" class="ab">
+		</div>
+		<br>
+		<div class="an">
+			<span class="ni" id="name_i">NS</span>
+			<span id="name">Name Surname</span>
+		</div>
+	</aside>
+	<header class="lodmh header">
+		<div class="ch">
+			ToDo
+		</div>
+		<div class="ch">
+			In progress
+		</div>
+		<div class="ch">
+			Review
+		</div>
+		<div class="ch">
+			Done
+		</div>
+	</header>
+	<main class="lodmc">
+		<div class="column" id="td"></div>
+		<div class="divider"></div>
+		<div class="column" id="pr"></div>
+		<div class="divider"></div>
+		<div class="column" id="re"></div>
+		<div class="divider"></div>
+		<div class="column" id="do"></div>
+	</main>
+	<footer>
+		©2023 Byte Busters | All Rights Reserved
+	</footer>
 </body>
+
 </html>
